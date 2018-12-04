@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "222700791656",
+    "firebase_url": "https://semana16-b0505.firebaseio.com",
+    "project_id": "semana16-b0505",
+    "storage_bucket": "semana16-b0505.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222700791656:android:a92cbcf22e888c25",
+        "android_client_info": {
+          "package_name": "joseluis0218.tecsup.com.semana16"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222700791656-qcco8ohdd0qpld2ttfmnbavrhm5m7v2v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "joseluis0218.tecsup.com.semana16",
+            "certificate_hash": "8e15ce56df711775dbede2de1074bf435e4b02a2"
+          }
+        },
+        {
+          "client_id": "222700791656-bc3sn20td6jo08ekpcft2qc3m24lpvfa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp881eZFbbUjrbSbvrZB95A5tD7dSF6kI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222700791656-bc3sn20td6jo08ekpcft2qc3m24lpvfa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
