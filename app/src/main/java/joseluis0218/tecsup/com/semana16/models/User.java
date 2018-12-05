@@ -6,11 +6,11 @@ public class User {
 
     private String email;
 
-    private String fullname;
+    private String displayName;
 
-    private String latitud;
 
-    private String longitud;
+    private String photoUrl;
+
 
 
     public String getId() {
@@ -29,28 +29,21 @@ public class User {
         this.email = email;
     }
 
-    public String getFullname() {
-        return fullname;
+
+    public String getPhotoUrl() {
+        return photoUrl;
     }
 
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
+    public void setPhotoUrl(String photoUrl) {
+        this.photoUrl = photoUrl;
     }
 
-    public String getLatitud() {
-        return latitud;
+    public String getDisplayName() {
+        return displayName;
     }
 
-    public void setLatitud(String latitud) {
-        this.latitud = latitud;
-    }
-
-    public String getLongitud() {
-        return longitud;
-    }
-
-    public void setLongitud(String longitud) {
-        this.longitud = longitud;
+    public void setDisplayName(String displayName) {
+        this.displayName = displayName;
     }
 
     @Override
@@ -58,9 +51,8 @@ public class User {
         return "User{" +
                 "id='" + id + '\'' +
                 ", email='" + email + '\'' +
-                ", fullname='" + fullname + '\'' +
-                ", latitud=" + latitud +
-                ", longitud=" + longitud +
+                ", displayName='" + displayName + '\'' +
+                ", photoUrl='" + photoUrl + '\'' +
                 '}';
     }
 }

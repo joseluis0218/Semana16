@@ -7,37 +7,40 @@
     android:layout_margin="16dp">
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/latitud_layout"
+        android:id="@+id/fullname_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/latitud_input"
+            android:id="@+id/fullname_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Latitud"
+            android:hint="Nombres y apellidos"
             android:inputType="text"
             android:maxLines="1"
             android:maxLength="100"/>
-    </android.support.design.widget.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/longitud_layout"
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:id="@+id/texto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/latitud_layout"
-        android:layout_marginBottom="16dp">
+        android:text="Señale su ubicación"
+        android:textSize="16dp"
+        android:layout_below="@id/fullname_layout"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/texto"
+        android:layout_marginTop="16dp">
 
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/longitud_input"
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Longitud"
-            android:inputType="text"
-            android:maxLines="1"
-            android:maxLength="100"/>
+            android:layout_height="match_parent" />
 
-    </android.support.design.widget.TextInputLayout>
-
+    </RelativeLayout>
 </RelativeLayout>
