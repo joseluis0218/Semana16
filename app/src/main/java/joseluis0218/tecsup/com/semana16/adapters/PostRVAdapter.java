@@ -70,11 +70,10 @@ public class PostRVAdapter extends RecyclerView.Adapter<PostRVAdapter.ViewHolder
         Log.d(TAG, "currentUser: " + currentUser);
 
         // Save/Update current user to Firebase Database
-        User user = new User();
 
         viewHolder.nombre.setText(post.getNombre());
         viewHolder.latLng.setText(post.getLatLng());
-        viewHolder.correo.setText(currentUser.getEmail());
+        viewHolder.correo.setText(post.getEmail());
 
         // Obteniendo datos del usuario asociado al post (una vez, sin realtime)
         DatabaseReference userRef = FirebaseDatabase.getInstance().getReference("users").child(post.getUserid());

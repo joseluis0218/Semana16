@@ -279,6 +279,7 @@ public class RegisterActivity extends AppCompatActivity {
         post.setId(postRef.getKey());
         post.setNombre(nombre);
         post.setUserid(currentUser.getUid());
+        post.setEmail(currentUser.getEmail());
         post.setLatLng(var.toString());
 
         postRef.setValue(post)

@@ -9,6 +9,7 @@ public class Post {
 
     private String nombre;
 
+    private  String email;
 
     private String latLng;
 
@@ -45,6 +46,13 @@ public class Post {
         this.latLng = latLng;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -60,6 +68,7 @@ public class Post {
                 "id='" + id + '\'' +
                 ", userid='" + userid + '\'' +
                 ", nombre='" + nombre + '\'' +
+                ", email='" + email + '\'' +
                 ", latLng='" + latLng + '\'' +
                 '}';
     }
